@@ -11,5 +11,6 @@ for i in range(n):
     print(c/b)
     a = b
     b = c
+
     
 
