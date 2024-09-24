@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, 
+from flask import Flask, render_template, request, redirect
 import json
 
 from json import load
@@ -22,7 +22,7 @@ def rute_index():
 '''@app.route("/onske", methods=["GET", "POST"])
 def onskeliste():
     if request.method == "POST":
-        navn = request.form.get("navn")
+        navn = request.form.get("navn")s
         favoritter.append(navn)
         return redirect("onske")'''
 
