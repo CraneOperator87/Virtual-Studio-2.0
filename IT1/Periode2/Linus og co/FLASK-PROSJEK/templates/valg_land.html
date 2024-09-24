@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block innhold %}
+
+<h1>{{land["navn"]}}</h1>
+
+<form action="/onskeliste" method="POST">
+    <input type="hidden" name="navn" value = "{{land['navn']}}">
+    <button type="submit">Legg til i ønskeliste</button>
+</form>
+
+<div id="bilderamme2">
+    <img class="bildervalgt" src="/static/bilder/{{land['bilde']}}" alt="">
+    
+    <div class="beskrivelse">
+        {% for beskrivelse in land["beskrivelse"] %}
+            <p>{{beskrivelse}}</p>
+            
+        
+        {% endfor %}
+        
+    </div>
+
+</div>
+
+
+<div class="info">
+    <p>Pris: {{land["pris"]}}</p>
+    <p>Landskost: {{land["landskost"]}}</p>
+    <p>Hovedstad: {{land["hovedstad"]}}</p>
+    <p>Kjente byer {{land["kjente byer"]}}</p>
+    <p>Tilbud 1: {{land["tilbud1"]}}</p>
+    <p>Tilbud 2: {{land["tilbud2"]}}</p>
+    <p>Tilbud 3: {{land["tilbud3"]}}</p>
+</div>
+
+
+
+<button>
+    <a href="/book">Book din reise nå!</a>
+</button>
+
+
+
+
+{% endblock %}

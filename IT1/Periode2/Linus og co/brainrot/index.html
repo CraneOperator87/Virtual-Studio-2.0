@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tullete Flask Side</title>
+    <style>
+        body {
+            background-color: #f0e68c;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            transition: background-color 0.5s ease;
+        }
+        h1, p, button {
+            transition: color 0.5s ease;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        p {
+            color: #4682b4;
+        }
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        @keyframes rainbow {
+            0% { background-color: #FF0000; }
+            14% { background-color: #FF7F00; }
+            28% { background-color: #FFFF00; }
+            42% { background-color: #00FF00; }
+            57% { background-color: #0000FF; }
+            71% { background-color: #4B0082; }
+            85% { background-color: #8B00FF; }
+            100% { background-color: #FF0000; }
+        }
+        .rainbow-animation {
+            animation: rainbow 2s linear;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .shake-animation {
+            animation: shake 0.5s;
+            animation-iteration-count: 4;
+        }
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .zoom-animation {
+            animation: zoom 1s;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .flicker-animation {
+            animation: flicker 0.1s infinite;
+        }
+        .scary {
+            background-color: black;
+            color: red;
+            font-family: 'Creepster', cursive;
+        }
+        .scary h1 {
+            color: red;
+        }
+        .scary p {
+            color: red;
+        }
+        .scary button {
+            background-color: red;
+            color: black;
+        }
+        .skull {
+            width: 100px;
+            height: 100px;
+            transition: transform 0.5s ease;
+        }
+        .large-skull {
+            transform: scale(10);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Velkommen til tullete side!</h1>
+    <p>Trykk på knappen for noe skikkelig tull!</p>
+    <button id="mainButton" onclick="startAnimations()">Trykk Meg!</button>
+    <p>Trykk meg nok ganger så får du en koselig overraskelse</p>
+    <p id="randomText"></p>
+    <h1 id="newHeading" style="display:none;">Oisann, nå kommer det noe</h1>
+    <button id="newButton" style="display:none;" onclick="startNewButtonAnimations()">Søt overraskelse</button>
+
+    <audio id="scarySound" src="scarysound/scarySound.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        let clickCount = 0;
+        let isScary = false;
+
+        function generateRandomText() {
+            const texts = isScary ? [
+                "Hvorfor kunne ikke spøkelset gå på festen? Fordi det hadde ingen kropp å gå med!",
+                "Hva sier skjelettet før et måltid? Beinhaftig appetitt!",
+                "Hva fikk vampyren til middag? Blodpudding!",
+                "Hvorfor gikk zombien på skolen? Fordi han ønsket å forbedre hjernen sin!",
+                "Hva er et spøkelses favoritt dessert? BØSKIVE HAHAHAHAHAH!",
+                "Hva sier et skjelett før du går inn i huset hans? Bli ikke forskrekket!"
+            ] : [
+                "Bananer danser i måneskinnet!",
+                "Katter elsker å spille gitar.",
+                "Har du sett en flyvende fisk?",
+                "Enhjørninger liker iskrem med jordbærsmak.",
+                "Pingviner kan ikke fly, men de kan drømme.",
+                "Elefanter spiller sjakk i jungelen.",
+                "Kan du telle alle stjernene på himmelen?"
+            ];
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            const randomTextElement = document.getElementById("randomText");
+            randomTextElement.innerText = texts[randomIndex];
+            randomTextElement.classList.add('zoom-animation');
+            setTimeout(() => {
+                randomTextElement.classList.remove('zoom-animation');
+            }, 1000);
+        }
+
+        function startAnimations() {
+            clickCount++;
+            if (clickCount === 5) {
+                showNewButton();
+            } else if (clickCount === 9) {
+                makeSkullLarge();
+            } else {
+                const body = document.body;
+                const randomTextElement = document.getElementById("randomText");
+
+                if (isScary) {
+                    body.classList.add('flicker-animation');
+                } else {
+                    body.classList.add('rainbow-animation');
+                    body.classList.add('shake-animation');
+                    // Start konfetti
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                }
+                generateRandomText();
+                
+                setTimeout(() => {
+                    body.classList.remove('rainbow-animation');
+                    body.classList.remove('shake-animation');
+                    body.classList.remove('flicker-animation');
+                    if (clickCount < 3) {
+                        body.style.backgroundColor = '#f0e68c';
+                    }
+                }, 2000);
+            }
+        }
+
+        function showNewButton() {
+            document.getElementById('newHeading').style.display = 'block';
+            document.getElementById('newButton').style.display = 'block';
+        }
+
+        function startNewButtonAnimations() {
+            // Hide the new button
+            document.getElementById('newButton').style.display = 'none';
+            document.getElementById('newHeading').style.display = 'none';
+            makeScary();
+        }
+
+        function makeScary() {
+            document.body.classList.add('scary');
+            isScary = true;
+            document.getElementById('randomText').innerText = "Du har gjort en stor feil!";
+            document.querySelector('h1').innerText = "DU ER FANGET !";
+            document.querySelector('p').innerText = "Trykk ikke på knappen igjen!";
+            document.querySelector('button').innerText = "For sent!";
+            
+            const skullImage = document.createElement('img');
+            skullImage.src = 'bilder/hodeskalle.png'; // Stien til ditt lokale bilde
+            skullImage.classList.add('skull');
+            skullImage.id = 'skullImage';
+            document.body.appendChild(skullImage);
+        }
+
+        function makeSkullLarge() {
+            const skullImage = document.getElementById('skullImage');
+            if (skullImage) {
+                skullImage.classList.add('large-skull');
+                playScarySound();
+            }
+        }
+
+        function playScarySound() {
+            const audio = document.getElementById('scarySound');
+            audio.play();
+        }
+    </script>
+</body>
+</html>

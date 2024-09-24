@@ -1,0 +1,249 @@
+{
+    "sveits":{
+        "navn":"Sveits",
+        "bilde":"sveits.jpeg",
+        "pris":15000,
+        "landskost": "Dyrt",
+        "hovedstad": "Bern",
+        "kjente byer": "Züric, Geneva. Bern, Grindewald",
+        "tilbud1": "Byferie (Bern, Züric og Geneva)",
+        "tilbud2": "Fjelltur til Matterhorn",
+        "tilbud3": "Alpint i Alpene",
+        "tilbud":{"tilbud":"Byferie (Bern, Züric og Geneva)", "tilbud2": "Fjelltur til Matterhorn", "tilbud3": "Alpint i Alpene"}, 
+        "type": "Europa",
+        "beskrivelse": [
+                "Opplev Sveits: Naturlig Skjønnhet og Kulturell Rikdom",
+                "Velkommen til Sveits, et land som blander spektakulære alpelandskap med rik kultur og enestående mat. Utforsk majestetiske fjell, krystallklare innsjøer og sjarmerende landsbyer. Opplev den rike kulturarven i byene Zürich, Bern og Genève, og nyt lokal mat som fondue og sjokolade. Med et effektivt transportsystem og gjestfri atmosfære er Sveits det perfekte reisemålet for eventyr og avslapning. Planlegg din neste reise til Sveits med oss!"
+
+        ]
+
+    },
+    "tyskland": {
+        "navn": "Tyskland",
+        "bilde": "tyskland.jpg",
+        "pris": 12000,
+        "landskost": "Moderat",
+        "hovedstad": "Berlin",
+        "kjente byer": "München, Hamburg, Frankfurt, Köln",
+        "tilbud1": "Kulturell opplevelse i Berlin",
+        "tilbud2": "Øltur i München",
+        "tilbud3": "Historisk sightseeing i Hamburg",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Tyskland: Kultur, Historie og Naturskjønnhet",
+            "Velkommen til Tyskland, et land med en fascinerende blanding av historie, kultur og naturskjønnhet. Utforsk middelalderens slott, gotiske katedraler og pulserende byer. Opplev den rike kulturarven i Berlin, München og Hamburg, og nyt tyske delikatesser som bratwurst, pretzels og schnitzel. Utforsk de pittoreske landskapene langs Rhinen, de frodige skogene i Schwarzwald og de majestetiske Alpene. Med sitt effektive transportsystem og gjestfrie atmosfære, er Tyskland et ideelt reisemål for både eventyrlystne opplevelser og avslappende ferier. Planlegg din neste reise til Tyskland med oss!"
+    ]
+
+    },
+    "frankrike": {
+        "navn": "Frankrike",
+        "bilde": "frankrike.jpg",
+        "pris": 14000,
+        "landskost": "Dyrt",
+        "hovedstad": "Paris",
+        "kjente byer": "Nice, Lyon, Marseille, Bordeaux",
+        "tilbud1": "Mat- og vintur i Bordeaux",
+        "tilbud2": "Sightseeing i Paris",
+        "tilbud3": "Sol og strandliv i Nice",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Frankrike: Kulinariske Delikatesser, Kultur og Skjønnhet",
+            "Velkommen til Frankrike, landet som fortryller besøkende med sin blendende skjønnhet, rike kulturarv og kulinariske herligheter. Utforsk de sjarmerende gatene i Paris, den romantiske atmosfæren i Provence og den glitrende Rivieraen. Opplev den rike kulturarven ved å besøke ikoniske landemerker som Eiffeltårnet, Louvre og Mont Saint-Michel. Nyt deilig fransk mat og vin på lokale kafeer og restauranter, og opplev autentisk fransk livsstil på de pulserende markedene. Med sitt mangfoldige landskap, fra de snødekte alpene til de solrike strendene ved Middelhavet, er Frankrike en drømmedestinasjon for alle reisende. La oss hjelpe deg med å planlegge din neste opplevelse i dette fantastiske landet!"
+    ]
+
+    },
+    "italia": {
+        "navn": "Italia",
+        "bilde": "italia.jpg",
+        "pris": 16000,
+        "landskost": "Billig",
+        "hovedstad": "Roma",
+        "kjente byer": "Milano, Firenze, Venezia, Napoli",
+        "tilbud1": "Kunst og kultur i Firenze",
+        "tilbud2": "Gondoltur i Venezia",
+        "tilbud3": "Pizza og pasta i Napoli",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Italia: Lidenskap, Kultur og Kulinariske Eventyr",
+            "Velkommen til Italia, landet som fengsler besøkende med sin lidenskapelige atmosfære, rike kulturarv og utsøkte matopplevelser. Utforsk de historiske skattene i Roma, den romantiske kanalene i Venezia og de kunstneriske skatter i Firenze. Opplev den rike kulturarven ved å besøke ikoniske landemerker som Colosseum, Det skjeve tårnet i Pisa og Vatikanmuseene. Nyt den autentiske italienske maten med pasta, pizza, gelato og vin på lokale trattoriaer og vinbarer. Med sitt varierte landskap, fra de dramatiske Dolomittene til de solfylte strendene i Amalfikysten, er Italia en destinasjon som appellerer til alle sanser. La oss hjelpe deg med å planlegge din drømmereise til dette fantastiske landet!"
+    ]
+
+    },
+    "spania": {
+        "navn": "Spania",
+        "bilde": "spania.jpg",
+        "pris": 14000,
+        "landskost": "Billig",
+        "hovedstad": "Madrid",
+        "kjente byer": "Barcelona, Sevilla, Valencia, Malaga",
+        "tilbud1": "Arkitektoniske perler i Barcelona",
+        "tilbud2": "Flamenco i Sevilla",
+        "tilbud3": "Sol og strand i Malaga",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Spania: Sol, Strand og Kulturrikdom",
+
+            "Velkommen til Spania, landet som lokker med sitt varme klima, vakre strender og rike kulturarv. Utforsk de pulserende gatene i Barcelona, den historiske prakt i Madrid og den mauriske arven i Sevilla. Opplev den rike kulturarven ved å besøke UNESCO-verdensarvsteder som Alhambra, Sagrada Família og gamlebyen i Toledo. Nyt den autentiske spanske maten med tapas, paella og sangria på lokale tapasbarer og restauranter. Med sitt varierte landskap, fra de snødekte Sierra Nevada-fjellene til de solfylte strendene på Costa del Sol, er Spania en destinasjon som appellerer til alle reisende. La oss hjelpe deg med å planlegge din neste eventyrfylte reise til dette herlige landet!"
+    ]
+
+    },
+    "storbritannia": {
+        "navn": "Storbritannia",
+        "bilde": "storbritannia.jpg",
+        "pris": 17000,
+        "landskost": "Moderat",
+        "hovedstad": "London",
+        "kjente byer": "Edinburgh, Manchester, Liverpool, Belfast",
+        "tilbud1": "Historisk sightseeing i London",
+        "tilbud2": "Middelalder tur i Edinburgh",
+        "tilbud3": "Beatles-tur i Liverpool",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Storbritannia: Historie, Kultur og Naturskjønnhet",
+
+            "Velkommen til Storbritannia, et land som byr på en unik blanding av fascinerende historie, variert kultur og imponerende naturlandskap. Utforsk de historiske landemerkene i London, den arkitektoniske prakt i Edinburgh og den keltiske sjarmen i Wales. Opplev den rike kulturarven ved å besøke ikoniske steder som Tower of London, Stonehenge og Buckingham Palace. Nyt den autentiske britiske maten med fish and chips, afternoon tea og pub-mat på lokale spisesteder. Med sine dramatiske kystlinjer, frodige landskap og majestetiske slott, har Storbritannia noe å tilby for enhver smak. La oss hjelpe deg med å planlegge din neste opplevelsesrike reise til dette mangfoldige landet!"
+    ]
+    },
+    "nederland": {
+        "navn": "Nederland",
+        "bilde": "nederland.jpg",
+        "pris": 16000,
+        "landskost": "Dyrt",
+        "hovedstad": "Amsterdam",
+        "kjente byer": "Rotterdam, Haag, Utrecht, Eindhoven",
+        "tilbud1": "Sykkeltur i Amsterdam",
+        "tilbud2": "Kunst og kultur i Haag",
+        "tilbud3": "Kanalcruise i Rotterdam",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Nederland: Kultur, Kanaler og Vennlig Atmosfære",
+
+            "Velkommen til Nederland, et land kjent for sin rike kultur, sjarmerende kanaler og vennlige atmosfære. Utforsk de pittoreske kanalene i Amsterdam, den historiske sjarmen i Utrecht og den moderne arkitekturen i Rotterdam. Opplev den rike kulturarven ved å besøke museer som Van Gogh-museet og Rijksmuseum, og nyt den avslappede atmosfæren på de lokale kafeene og sykkelstiene. Med sitt flate landskap og imponerende vindmøller er Nederland en destinasjon som byr på unike opplevelser og varm gjestfrihet. La oss hjelpe deg med å planlegge din neste reise til dette herlige landet!"
+    ]
+
+    },
+    "portugal": {
+        "navn": "Portugal",
+        "bilde": "portugal.jpg",
+        "pris": 14000,
+        "landskost": "Billig",
+        "hovedstad": "Lisboa",
+        "kjente byer": "Porto, Faro, Coimbra, Braga",
+        "tilbud1": "Utforsk historiske monumenter i Lisboa",
+        "tilbud2": "Vinsmaking i Porto",
+        "tilbud3": "Sol og strender i Faro",
+        "type": "Europa",
+        "beskrivelse": [
+            "Opplev Portugal: Kystskjønnhet, Kultur og Gastronomi",
+
+            "Velkommen til Portugal, et land som frister med sin blendende kystskjønnhet, rike kulturarv og smaksrike gastronomi. Utforsk de fargerike byene Lisboa, Porto og Faro, og opplev den rike kulturarven ved å besøke UNESCO-verdensarvsteder som Belem-tårnet og Jeronimos-klosteret. Nyt den autentiske portugisiske maten med fersk sjømat, deilig bacalhau (torsk) og søte pasteis de nata (eggekaker) på lokale restauranter og kafeer. Med sine gylne strender, dramatiske klipper og pittoreske landsbyer, er Portugal et reisemål som appellerer til alle sanser. La oss hjelpe deg med å planlegge din neste eventyrlige reise til dette sjarmerende landet!"
+    ]
+    },
+    "japan": {
+        "navn": "Japan",
+        "bilde": "japan.jpg",
+        "pris": 25000,
+        "landskost": "Dyrt",
+        "hovedstad": "Tokyo",
+        "kjente byer": "Kyoto, Osaka, Hiroshima, Nagoya",
+        "tilbud1": "Besøk templer i Kyoto",
+        "tilbud2": "Sushi-smaking i Tokyo",
+        "tilbud3": "Kulturell opplevelse i Hiroshima",
+        "type": "Asia",
+        "beskrivelse": [
+            "Opplev Japan: Tradisjon, Teknologi og Naturskjønnhet",
+
+            "Velkommen til Japan, et land som fascinerer med sin rike kulturarv, avansert teknologi og fortryllende naturlandskap. Utforsk de pulserende byene Tokyo, Kyoto og Osaka, og opplev den unike kulturarven ved å besøke gamle templer, tradisjonelle tehus og fargerike festivaler. Nyt den delikate japanske maten med sushi, tempura og ramen på lokale restauranter og matsjas. Med sine blendende sakura-blomster, majestetiske fjell og frodige skoger, er Japan et land som tilbyr en uendelig rekke opplevelser for enhver reisende. La oss hjelpe deg med å planlegge din neste uforglemmelige reise til dette fantastiske landet!"
+    ]
+    },
+    "thailand": {
+        "navn": "Thailand",
+        "bilde": "thailand.jpg",
+        "pris": 18000,
+        "landskost": "Moderat",
+        "hovedstad": "Bangkok",
+        "kjente byer": "Phuket, Chiang Mai, Krabi, Pattaya",
+        "tilbud1": "Øyhopping i Phuket",
+        "tilbud2": "Elefanttur i Chiang Mai",
+        "tilbud3": "Strandliv i Krabi",
+        "type": "Asia",
+        "beskrivelse": [
+            "Opplev Thailand: Kultur, Smil og Eksotisk Skjønnhet",
+
+            "Velkommen til Thailand, landet kjent for sin rike kultur, gjestfrihet og eksotiske skjønnhet. Utforsk de livlige byene Bangkok, Chiang Mai og Phuket, og opplev den rike kulturarven ved å besøke majestetiske templer, fargerike markeder og tradisjonelle landsbyer. Nyt den aromatiske thailandske maten med retter som pad thai, grønn curry og fersk tropisk frukt på lokale gatekjøkken og restauranter. Med sine kritthvite strender, krystallklare hav og frodige jungler, er Thailand et paradis for solsultne reisende og eventyrlystne utforskere. La oss hjelpe deg med å planlegge din neste reise til dette fantastiske landet!"
+    ]
+    },
+    "canada": {
+        "navn": "Canada",
+        "bilde": "canada.jpg",
+        "pris": 30000,
+        "landskost": "Dyrt",
+        "hovedstad": "Ottawa",
+        "kjente byer": "Toronto, Vancouver, Montreal, Calgary",
+        "tilbud1": "Naturutforskning i Rocky Mountains",
+        "tilbud2": "Hvalskuing i Vancouver",
+        "tilbud3": "Maple syrup i Montreal",
+        "type": "Amerika",
+        "beskrivelse": [
+            "Opplev Canada: Naturlig Skjønnhet, Kultur og Eventyr",
+
+            "Velkommen til Canada, et land som imponerer med sin overveldende naturlige skjønnhet, mangfoldige kulturarv og spennende eventyr. Utforsk de pulserende byene Toronto, Vancouver og Montreal, og opplev den rike kulturarven ved å besøke museer, kunstgallerier og historiske steder. Nyt den varierte matkulturen med retter som poutine, smørbrød med røkt laks og maple syrup-pannekaker på lokale restauranter og kafeer. Med sine majestetiske fjell, glitrende innsjøer og endeløse skoger, er Canada et paradis for friluftsentusiaster og naturelskere. La oss hjelpe deg med å planlegge din neste eventyrlige reise til dette fantastiske landet!"
+    ]
+    },
+    "brasil": {
+        "navn": "Brasil",
+        "bilde": "brasil.jpg",
+        "pris": 15000,
+        "landskost": "Moderat",
+        "hovedstad": "Brasília",
+        "kjente byer": "Rio de Janeiro, São Paulo, Salvador, Belo Horizonte",
+        "tilbud1": "Karneval i Rio de Janeiro",
+        "tilbud2": "Samba i São Paulo",
+        "tilbud3": "Strandliv i Salvador",
+        "type": "Amerika",
+        "beskrivelse": [
+            "Opplev Brasil: Lidenskap, Kultur og Naturskjønnhet",
+
+            "Velkommen til Brasil, et land som pulserer av lidenskap, rik kultur og enestående naturlige skatter. Utforsk de livlige byene Rio de Janeiro, São Paulo og Salvador, og opplev den rike kulturarven ved å delta på fargerike festivaler, danse samba og utforske historiske landemerker. Nyt den deilige brasilianske maten med retter som feijoada, açaí-bowls og fersk sjømat på lokale restauranter og gatekjøkken. Med sine paradisiske strender, mektige regnskoger og imponerende fossefall, er Brasil et land som vekker eventyrlysten og gir uforglemmelige opplevelser. La oss hjelpe deg med å planlegge din neste reise til dette spennende landet!"
+    ]
+
+    },
+    "kenya": {
+        "navn": "Kenya",
+        "bilde": "kenya.jpg",
+        "pris": 11000,
+        "landskost": "Moderat",
+        "hovedstad": "Nairobi",
+        "kjente byer": "Mombasa, Kisumu, Nakuru, Eldoret",
+        "tilbud1": "Safari i Maasai Mara",
+        "tilbud2": "Besøk Lake Nakuru National Park",
+        "tilbud3": "Badeferie i Mombasa",
+        "type": "Afrika",
+        "beskrivelse": [
+            "Opplev Kenya: Safari, Kultur og Naturlige Underverk",
+
+            "Velkommen til Kenya, et land som lokker med sine spektakulære safarier, rike kulturarv og enestående naturlige skatter. Utforsk de ikoniske savannene i Masai Mara, Amboseli og Tsavo, og opplev den rike kulturarven ved å besøke tradisjonelle landsbyer og lære om den stolte masai-kulturen. Nyt den autentiske kenyanske maten med retter som nygrillet nyama choma (grillet kjøtt) og ugali (maismelblanding) på lokale restauranter og markeder. Med sine majestetiske fjell, dyrearter og vakre kystlinjer, er Kenya et paradis for eventyrlystne reisende og dyrelivsentusiaster. La oss hjelpe deg med å planlegge din neste safariopplevelse til dette fantastiske landet!"
+    ]
+
+
+    },
+    "sør-afrika": {
+        "navn": "Sør-Afrika",
+        "bilde": "sør-afrika.jpg",
+        "pris": 17000,
+        "landskost": "Moderat",
+        "hovedstad": "Pretoria (administrativ), Cape Town (lovgivende), Bloemfontein (judisiell)",
+        "kjente byer": "Johannesburg, Durban, Port Elizabeth, Pretoria",
+        "tilbud1": "Safari i Kruger nasjonalpark",
+        "tilbud2": "Vinsmaking i Stellenbosch",
+        "tilbud3": "Kapp det gode håp-tur i Cape Town",
+        "type": "Afrika",
+        "beskrivelse": [
+        "Opplev Sør-Afrika: Safari, Kultur og Naturskjønnhet",
+
+        "Velkommen til Sør-Afrika, et land som imponerer med sine fantastiske safariopplevelser, rike kulturarv og varierte naturlandskap. Utforsk de verdensberømte nasjonalparkene Kruger, Addo og Hluhluwe-Imfolozi, og opplev den rike kulturarven ved å besøke historiske steder som Robben Island og Soweto. Nyt den unike sør-afrikanske maten med retter som braai (grillet kjøtt), bobotie og biltong på lokale restauranter og markeder. Med sine majestetiske fjell, krystallklare strender og frodige vinmarker, er Sør-Afrika et land som appellerer til alle sanser. La oss hjelpe deg med å planlegge din neste eventyrlige reise til dette fantastiske landet!"
+    ]
+
+    }
+
+}

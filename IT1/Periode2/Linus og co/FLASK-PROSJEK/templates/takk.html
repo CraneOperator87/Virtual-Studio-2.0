@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block innhold %}
+
+<h1>Ferien din er nå bestil!</h1>
+
+<h2>Registrerte reiser:</h2>
+
+{% for person in paameldte %}
+    <li>{{person["navn"]}}: {{person["land"]}} ,{{person["aktivitet"]}}</li>
+{% endfor %}
+
+<a href="/">Tilbake til start</a>
+
+{% endblock %}

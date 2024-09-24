@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block innhold %}
+<div class="bildeq">
+    <img src="/static/bilder/bookback.jpeg" class="bildehoved2" alt="">
+    <div class="ramme-tekst2">
+        <p id="bookoverskrift">Book her</p>
+        <form action="/takk" type= "get" id="registrer">
+            <input type="text" name="navn" placeholder="Navn">
+            <select name="land">
+                <option value="" disabled selected>Land</option>
+                {% for navn, land_info in land.items() %}
+                    <option value="{{ navn }}">{{ navn }}</option>
+                {% endfor %}
+            </select>
+            <select name="aktivitet">
+                <option value="" disabled selected>Aktivitet</option>
+                    {% for navn, land_info in land.items() %}
+                            <option value="tilbud1">{{ land_info["tilbud1"] }}</option>
+                            <option value="tilbud2">{{ land_info["tilbud2"] }}</option>
+                            <option value="tilbud3">{{ land_info["tilbud3"] }}</option>
+                    {% endfor %}
+            </select>
+            <button type="submit">Send inn</button>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

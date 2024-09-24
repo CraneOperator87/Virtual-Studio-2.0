@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block innhold %}
+
+<div class="knappertype">
+    <div id="filtrer-tekst">Filtrer:</div>
+    <div class="knapper-container">
+        <form class="knappertypein" action="/reisevelger/Europa">
+            <button class="knappen" type="submit">Europa</button>
+        </form>
+        <form class="knappertypein" action="/reisevelger/Asia">
+            <button class="knappen" type="submit">Asia</button>
+        </form>
+        <form class="knappertypein" action="/reisevelger/Afrika">
+            <button class="knappen" type="submit">Afrika</button>
+        </form>
+        <form class="knappertypein" action="/reisevelger/Amerika">
+            <button class="knappen" type="submit">Amerika</button>
+        </form>
+        
+
+    </div>
+</div>
+
+    <div id="landgrid">
+            {% for nøkkel in land %}
+            <div class="image-container"> 
+                <a href="/land/{{nøkkel}}">
+                    <img id="landbilder" src="/static/bilder/{{land[nøkkel]['bilde']}}" alt="">
+                    <div class="overlay-text">{{ land[nøkkel]['navn'] }}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

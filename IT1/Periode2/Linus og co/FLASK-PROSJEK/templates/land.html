@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block innhold %}
+
+    <h2>Land du kan reise til</h2>
+
+{% for nøkkel in land %}
+    <div> 
+        <a href="/land/{{nøkkel}}">
+            {{land[nøkkel]["navn"] }}
+
+        </a>
+    </div>
+{% endfor %}
+
+{% endblock %}

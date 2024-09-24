@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block innhold %}
+
+<div class="anmeldelse-section">
+    <h1 id="anmeldelse-overskrift" >Anmeldelser</h1>
+    <p id="undertittel-andmeldelse" >Legg igjen en anmeldelse av tidligere reiser, vår service eller noe annet dere vil annmelde!</p>
+
+    <form action="/anmeldelser" method="post" class="anmeldelse-form">
+        <div class="anmeldelse-div">
+            <label class="anmeldelse-label" for="navn">Navn:</label>
+            <input class="skrive1" type="text" name="navn" id="navn">
+        </div>
+        <div class="anmeldelse-div">
+            <label class="anmeldelse-label" for="melding">Melding:</label>
+            <input class="skrive1" type="text" name="melding">
+        </div>
+        <button type="submit" class="anmeldelse-knapp">Send</button>
+    </form>
+
+    <div class="anmeldelsene">
+        {% for innlegg in anmeldelser %}
+            <div class="individuell-anmeldelse">
+                <p class="anmeldelse-navn">{{innlegg["navn"]}}:</p>
+                <p class="anmeldelse-melding">{{innlegg["melding"]}}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

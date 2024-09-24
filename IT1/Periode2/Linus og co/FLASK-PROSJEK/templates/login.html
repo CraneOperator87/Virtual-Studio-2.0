@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block innhold %}
+
+<div class="bildeq">
+    <img class="bildehoved3" src="/static/bilder/sakura2.jpg" alt="">
+    <div id="loginbod">
+        <h1 class="logte1">Login / Registrer</h1>
+        <p class="logp">Skriv inn brukernavn og registrer en bruker</p>
+        <p class="logp">Deretter kan du logge inn i denne brukeren senere!</p>
+        <form class="logi" action="/login" method="post">
+            <h3 class="logte" for="username">Brukernavn:</h3>
+            <input class="inputlog" type="text" name="username">
+            <h3 class="logte" for="password">Passord:</h3>
+            <input class="inputlog" type="password" name="password">
+            <input id="buttonlog" type="submit" value="Login">
+        </form>
+    </div>
+</div>
+    
+
+{% endblock %}
