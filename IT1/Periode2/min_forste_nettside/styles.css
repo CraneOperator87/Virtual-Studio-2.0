@@ -3,6 +3,10 @@ body {
     font-family : Georgia, serif;
 }
 
+a {
+    color : #E0E1DD;
+}
+
 .artister {
     background-color: #415A77;
     border : 2px solid #0D1B2A; 
@@ -32,9 +36,17 @@ body {
     border : 2px solid #0D1B2A;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
+
+#postmalone  {
+    text-decoration: none;
+    color : #E0E1DD;
+
+}
+
 
