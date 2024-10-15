@@ -9,7 +9,7 @@ summen = 0 # Summen
 delta_x = (b-a)/n  # Bredden av rektanglene
 
 for i in range(n): # Rektangelmetoden med midtlinje
-    summen = summen + f(a + (i+1/2) * delta_x) * delta_x # Legger til arealet av rektanglene
+    summen = summen + f(a + (i + 1/2) * delta_x) * delta_x # Legger til arealet av rektanglene
 
 print(round(summen, 3)) # Skriver ut summen
 
