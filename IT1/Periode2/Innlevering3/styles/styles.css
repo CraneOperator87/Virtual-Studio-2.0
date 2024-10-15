@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-family : Arial;
+    font-size: 40px;
+    text-align: auto;
+    margin :45px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 500px;
+}
+
+th {
+    text-align: center;
+    border: 1px solid #f6f5f4;
+    padding: 8px;
+    background-color: #3f5765;
+    color: white;
+}
+
+td {
+    border: 1px solid #f6f5f4;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f5f4;
+}
+
+.gridcontainer {
+    background-color: #404040;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    margin: auto;
+    width: 800px;
+    height: 900px; 
+}
+
+.header {
+    background-color: #3f5765;
+    grid-column : span 3;
+    grid-row: span 1;
+    border : 3px solid black;
+}
+
+.main {
+    background-color : #bdd4de;
+    display : grid;
+    grid-template-columns : repeat(3, 1fr);
+    grid-column : span 3;
+    grid-row : span 2;
+    border : 3px solid black;
+}
+
+.photo {
+    border: 3px solid black;
+}
+
+.grid-photo img {
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo1 {
+    grid-column : 1;
+    grid-row : 4 / 7;
+}
+.photo2 {
+    grid-column : 2;
+    grid-row : 4 / 7;
+}
+
+.photo3 {
+    grid-column : 3;
+    grid-row : 4 / 7;
+}
