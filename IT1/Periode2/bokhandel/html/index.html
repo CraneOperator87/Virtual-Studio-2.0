@@ -3,63 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hovedside | Smarte Bokhandelen</title>
-    <link rel = "stylesheet" type = "text/css" href = "../styles/styles.css" />
+    <title>Hovedside | Smarte Bokhandelen</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
 </head>
 <body>
 
-    <div class = "header">
-        <!--- Header for hele nettsiden-->
-        <img src = "../images/logo.png" alt = "logo til bokhandel"> <!--- Logo til bokhandel-->
-        <h1>Smarte Bokhandleren</h1>                                <!--- Tittel på nettsiden-->
-        <div class = "naviger">                                     <!--- Navigeringsmeny som er felles for hele nettsiden-->
-            <a href = "Utstilling.html">Utstilling</a>
-            <a href = "Romantisk.html">Romantisk</a>
-            <a href = "Fantasy.html">Fantasy</a>
-            <a href = "OmOss.html">Om oss!</a>
-        </div>
-    </div>
+    <header>
+        <img src="../images/logo.png" alt="logo til bokhandel"> <!--- Logo til bokhandel-->
+        <h1>Smarte Bokhandleren</h1>                            <!--- Tittel på nettsiden-->
+        <nav>
+            <ul>
+                <a href="Populaere.html">niigga</a>
+                <a href="Romantiske.html">nigggga</a>
+                <a href="SciFi.html">kniga</a>
+                <a href="OmOss.html">neger!</a>
+            </ul>
+        </nav>
+    </header>
 
-    <div class = "hovedside">
-        <!--- Hovedside for nettsiden, hjemmesiden da man søker/trykker inn på siden-->
-        <h2>Velkommen til Smarte Bokhandelen</h2>
-        <p>Her kan du finne bøker innenfor alle sjangre. Vi har alt fra romantiske bøker til fantasy bøker. 
-            Vi har også en egen utstilling for de mest populære bøkene. </p>
-        <p>Vi har også en egen side for de som ønsker å vite mer om oss. </p>
-
-        <img src="../images/logo.png" alt="bilde av bokhandel">
-        <a href = "Utstilling.html">Se hele utstillingen her!</a>   <!--- Lenke til utstillingssiden som tekst-->
-
-        <h2> MÅNEDENS BESTE:</h2>
-        <div id = "populære">
-
-            <div class = "image-box">
-                <img src = "../images/Bok1.png" alt = "bilde av bok1">
+    <main>
+        <section id="populaere">
+            <h2>Populære Bøker</h2>
+            <div class="image-box">
+                <a href="kjopbok1.html"><img src="../images/Bok1.png" alt="bilde av bok1"></a>
                 <p>Karen Støylen, "BRENNINGER"</p>
             </div>
-
-            <div class = "image-box">
-                <img src = "../images/Bok3.png" alt = "bilde av bok2">
+            <div class="image-box">
+                <img src="../images/Bok3.png" alt="bilde av bok2">
                 <p>Elisabeth Hammer, "FROSTROSE"</p>
             </div>
-
-            <div class = "image-box">
-                <img src = "../images/Bok5.png" alt = "bilde av bok3">
+            <div class="image-box">
+                <img src="../images/Bok5.png" alt="bilde av bok3">
                 <p>Synnøve Eriksen, "DER STIENE MØTES"</p>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section id="romantiske">
+            <h2>Romantiske Bøker</h2>
+            <div class="image-box">
+                <a href="kjopbok2.html"><img src="../images/Bok2.png" alt="bilde av bok4"></a>
+                <p>Forfatter, "Tittel på bok4"</p>
+            </div>
+            <div class="image-box">
+                <img src="../images/Bok4.png" alt="bilde av bok5">
+                <p>Forfatter, "Tittel på bok5"</p>
+            </div>
+        </section>
+
+        <section id="scifi">
+            <h2>Sci-Fi Bøker</h2>
+            <div class="image-box">
+                <a href="kjopbok3.html"><img src="../images/Bok6.png" alt="bilde av bok6"></a>
+                <p>Forfatter, "Tittel på bok6"</p>
+            </div>
+            <div class="image-box">
+                <img src="../images/Bok7.png" alt="bilde av bok7">
+                <p>Forfatter, "Tittel på bok7"</p>
+            </div>
+        </section>
+    </main>
     
-    <div class="footer">
+    <footer>
         <div class="footer-container">
             <p>&copy; 2025 Smarte Bokhandleren. Alle rettigheter reservert.</p>
-            <div class="naviger">
-                <a href="Utstilling.html">Utstilling</a>
-                <a href="Romantisk.html">Romantisk</a>
-                <a href="Fantasy.html">Fantasy</a>
-                <a href="OmOss.html">Om oss!</a>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="Populaere.html">Populære</a></li>
+                    <li><a href="Romantiske.html">Romantiske</a></li>
+                    <li><a href="SciFi.html">Sci-Fi</a></li>
+                    <li><a href="OmOss.html">Om oss!</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

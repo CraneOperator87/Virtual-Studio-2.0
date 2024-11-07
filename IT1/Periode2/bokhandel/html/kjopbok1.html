@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[tittel] § Smarte Bokhandleren</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+<style>
+     /* Her lager vi CSS i HTML, siden det er litt mer oversiktelig :) */
+        .grid-container {
+            display: grid;  /* Først, er det greit å ha en grid */
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            border: 1px solid white;
+        }
+        .grid-item {
+            display: flex;  /* flexbox : Enklere å plasere bilder (Inne i gridcontainer) */       
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .grid-item img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <!--- Header for hele nettsiden-->
+        <img src="../images/logo.png" alt="logo til bokhandel"> <!--- Logo til bokhandel-->
+        <h1>Smarte Bokhandleren</h1>                                <!--- Tittel på nettsiden-->
+        <div class="naviger">                                     <!--- Navigeringsmeny som er felles for hele nettsiden-->
+            <a href="Utstilling.html">Utstilling</a>
+            <a href="Romantisk.html">Romantisk</a>
+            <a href="Fantasy.html">Fantasy</a>
+            <a href="OmOss.html">Om oss!</a>
+        </div>
+    </div>
+
+    <div class = "hovedside">
+        <div class = "grid-container">
+            <div class = "grid-item">
+                <img src="../images/Bok1.png" alt="bilde av bok1">
+            </div>
+            <div class = "grid-item">
+                <p>"Lorem ipsum dolor", sit amet consectetur adipisicing elit."</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>

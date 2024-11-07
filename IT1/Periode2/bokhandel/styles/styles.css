@@ -116,3 +116,10 @@ body {
     text-decoration: none;
     color: #000;
 }
+
+.text_om_oss {
+    color : white;
+    font-size : 20px;
+    text-align : center;
+    width: 600px;
+}
