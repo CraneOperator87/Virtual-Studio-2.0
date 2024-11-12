@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BOK 1 § Smarte Bokhandelen </title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .grid-container {
+            display : grid;
+            grid-template-columns:  1fr 1fr;
+            gap: 30px;
+            align-items : center;
+            justify-content : center;
+            border : 1px solid white;
+            margin : 0px auto;
+            max-width: 1200px;
+        }
+        .grid-item {
+            display : flex;
+            flex-direction : column;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-item p {
+            color : white;
+            font-family: sans-serif;
+            font-size : 30px;
+            margin-right : 40px;
+        }
+
+        .grid-item h1 {
+            font-size : 40px;
+            color : white;
+            font-family: sans-serif;
+            margin-right : 40px;
+        }
+
+        .grid-item img {
+            width : 300px;
+            padding : 20px;
+            height : auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.png" alt="logo Bokhandelen">
+        <h1>Smarte Bokhandelen</h1>
+        <nav>
+            <a href="#populaere">Populære</a>
+            <a href="#romantiske">Romantiske</a>
+            <a href="#scifi">Sci-fi</a>
+            <a href="../html/omoss.html">Om Oss</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="../images/Bok6.png" alt="bok1">
+            </div>
+
+            <div class = "grid-item">
+                    <h1> Lorem ispun - consectetur adipiscing </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p> Pris: 100 kr </p>
+                    <p> kjøp her </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class = "seperator">
+            <h1> KONTAKT OSS </h1>
+        </div>
+        <p>Adresse: Smarte Bokhandelen, Bokveien 1, 1234 Bokby</p>
+        <p>Telefon: 123 45 678 </p>
+        <p>E-post: smarte@bokhandel.no </p>
+        <nav>
+            <a href="#populaere">Populære</a>
+            <a href="#romantiske">Romantiske</a>
+            <a href="#scifi">Sci-fi</a>
+            <a href="../html/omoss.html">Om Oss</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>

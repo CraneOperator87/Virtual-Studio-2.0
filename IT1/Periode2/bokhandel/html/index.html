@@ -8,9 +8,10 @@
     <style>
         .grid-container1 {
             display : grid;
-            grid-template-rows : 1fr;
             grid-template-columns:  1fr 1fr 1fr;
             gap: 10px;
+            align-items : center;
+            justify-content : center;
         }
 
         .grid-container2 {
@@ -18,12 +19,31 @@
             grid-template-rows : repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
             gap : 10px;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-item {
+            display : flex;
+            flex-direction : column;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-item p {
+            color : rgb(75, 69, 69);
+        }   
+
+        .grid-item img {
+            width : 200px;
+            height : auto;
         }
 
         .seperator {
             display : flex;
             justify-content : center;
             border-top : 3px solid white;
+            margin-bottom : 20px;
         }
 
         .seperator h1 {
@@ -67,48 +87,106 @@
         </div>
         <div class = "grid-container1">
             <div class = "grid-item">
-                <img src = "../images/Bok1.png" alt = "Bok1">
+                <a href = ../html/kjop1.html>
+                    <img src = "../images/Bok1.png" alt = "Bok1">
+                </a>
                 <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <img src = "../images/Bok2.png" alt = "Bok2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href = ../html/kjop2.html>
+                    <img src = "../images/Bok2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <img src = "../images/Bok3.png" alt = "Bok3">   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href = ../html/kjop3.html>
+                    <img src = "../images/Bok3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
     </section>
 
     <section id = "romantiske">
+        <div class = "seperator">
+            <h1> ROMANTISKE BØKER </h1>
+        </div>
         <div class = "grid-container2">
             <div class = "grid-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href = ../html/kjop6.html>
+                    <img src = "../images/Bok6.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href = ../html/kjop5.html>
+                    <img src = "../images/Bok5.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href = ../html/kjop3.html>
+                    <img src = "../images/Bok3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-
+            <div class = "grid-item">
+                <a href = ../html/kjop1.html>
+                    <img src = "../images/Bok1.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop2.html>
+                    <img src = "../images/Bok2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop4.html>
+                    <img src = "../images/Bok4.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
     </section>
+
     <section id = "scifi">
+        <div class = "seperator">
+            <h1> SCI-FI BØKER </h1>
+        </div>
         <div class = "grid-container1">
             <div class = "grid-item">
-                <p>grid item</p>
+                <a href = ../html/kjop7.html>
+                    <img src = "../images/SciFi1.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <p> grid item 2</p>
+                <a href = ../html/kjop8.html>
+                    <img src = "../images/SciFi2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class = "grid-item">
-                <p> grid item 3</p>
+                <a href = ../html/kjop9.html>
+                    <img src = "../images/SciFi3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-
     </section>
 
     <footer>
-
+        <div class = "seperator">
+            <h1> KONTAKT OSS </h1>
+        </div>
+        <p>Adresse: Smarte Bokhandelen, Bokveien 1, 1234 Bokby</p>
+        <p>Telefon: 123 45 678 </p>
+        <p>E-post: smarte@bokhandel.no </p>
+        <nav>
+            <a href="#populaere">Populære</a>
+            <a href="#romantiske">Romantiske</a>
+            <a href="#scifi">Sci-fi</a>
+            <a href="../html/omoss.html">Om Oss</a>
+        </nav>
     </footer>
 
 </body>
