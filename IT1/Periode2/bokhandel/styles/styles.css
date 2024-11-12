@@ -1,0 +1,57 @@
+body {
+    font-family : sans-serif;
+    color : rgb(0, 0, 0);
+    background-color : rgb(172, 165, 165);
+    margin : 0px;
+}
+
+header {
+    background-color: rgb(46, 99, 146);
+    color: rgb(0, 0, 0);
+    border: 2px solid #EBEBEB;
+
+    display: flex; 
+    align-items: end; 
+    justify-content: space-between;
+
+    box-sizing: border-box; 
+    padding: 0px;
+    width: 100%; 
+    margin: 0px;
+}
+
+header h1{
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: sans-serif;
+    padding: 18px;
+}
+
+header img{
+    width: auto;
+    height: 64px;
+}
+
+nav {
+    display: flex;
+    gap : 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 1em;
+    margin: 0px;
+}
+
+section {
+
+}
+
+footer {
+
+}
