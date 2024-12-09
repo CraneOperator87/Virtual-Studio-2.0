@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hjem § Smarte Bokhandelen</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <style>
-        .grid-container {
+        .grid-container1 {
+            display : grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            gap: 10px;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-container2 {
             display: grid;
-            grid-template-rows : repeat(3, 1fr);
+            grid-template-rows : repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
+            gap : 10px;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-item {
+            display : flex;
+            flex-direction : column;
+            align-items : center;
+            justify-content : center;
+        }
+
+        .grid-item p {
+            color : rgb(75, 69, 69);
+        }   
+
+        .grid-item img {
+            width : 200px;
+            height : auto;
+        }
+
+        .seperator {
+            display : flex;
+            justify-content : center;
+            border-top : 3px solid white;
+            margin-bottom : 20px;
+        }
+
+        .seperator h1 {
+            color : rgb(75, 69, 69);
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="../images/logo.png" alt="logo Bokhandelen">
+        <img src="../images/logo.png"/>
         <h1>Smarte Bokhandelen</h1>
         <nav>
             <a href="#populaere">Populære</a>
@@ -24,29 +62,131 @@
             <a href="../html/omoss.html">Om Oss</a>
         </nav>
     </header>
+
     <main>
-        <div class = "grid-container">
-            <div class = "grid-item">
-            </div>
-            <div class = "grid-item">
-            </div>
-            <div class = "grid-item">
-            </div>
-        </div>
+        <h1> VELKOMMEN TIL DEN SMARTE BOKHANDELEN</h1>
+        <p> Her finner du bøker til enhver alder
+            og enhver smak. Vi har alt fra krim til
+            romantikk, og fra sci-fi til fantasy. 
+            Vi har også et stort utvalg av barnebøker
+            og ungdomsbøker.
+        </p>
+        <img src = "../images/logo.png" alt = "Logo til Smarte bokhandelen">
+        <p> Vi har også et stort utvalg av barnebøker
+            og ungdomsbøker.
+        </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ratione autem deleniti nostrum impedit porro tempora harum! 
+            Harum, numquam blanditiis commodi suscipit ad unde 
+            optio voluptatem amet omnis adipisci quibusdam mollitia.</p>
     </main>
     
     <section id = "populaere">
-
+        <div class = "seperator">
+            <h1> POPULÆRE BØKER </h1>
+        </div>
+        <div class = "grid-container1">
+            <div class = "grid-item">
+                <a href = ../html/kjop1.html>
+                    <img src = "../images/Bok1.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop2.html>
+                    <img src = "../images/Bok2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop3.html>
+                    <img src = "../images/Bok3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
     </section>
+
     <section id = "romantiske">
-
+        <div class = "seperator">
+            <h1> ROMANTISKE BØKER </h1>
+        </div>
+        <div class = "grid-container2">
+            <div class = "grid-item">
+                <a href = ../html/kjop6.html>
+                    <img src = "../images/Bok6.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop5.html>
+                    <img src = "../images/Bok5.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop3.html>
+                    <img src = "../images/Bok3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop1.html>
+                    <img src = "../images/Bok1.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop2.html>
+                    <img src = "../images/Bok2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop4.html>
+                    <img src = "../images/Bok4.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
     </section>
-    <section id = "scifi">
 
+    <section id = "scifi">
+        <div class = "seperator">
+            <h1> SCI-FI BØKER </h1>
+        </div>
+        <div class = "grid-container1">
+            <div class = "grid-item">
+                <a href = ../html/kjop7.html>
+                    <img src = "../images/SciFi1.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop8.html>
+                    <img src = "../images/SciFi2.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class = "grid-item">
+                <a href = ../html/kjop9.html>
+                    <img src = "../images/SciFi3.png" alt = "Bok1">
+                </a>
+                <p>gLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
     </section>
 
     <footer>
-
+        <div class = "seperator">
+            <h1> KONTAKT OSS </h1>
+        </div>
+        <p>Adresse: Smarte Bokhandelen, Bokveien 1, 1234 Bokby</p>
+        <p>Telefon: 123 45 678 </p>
+        <p>E-post: smarte@bokhandel.no </p>
+        <nav>
+            <a href="#populaere">Populære</a>
+            <a href="#romantiske">Romantiske</a>
+            <a href="#scifi">Sci-fi</a>
+            <a href="../html/omoss.html">Om Oss</a>
+        </nav>
     </footer>
 
 </body>
