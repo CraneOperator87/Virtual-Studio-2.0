@@ -5,3 +5,5 @@ let bollerPerPerson = antallBoller / 4;
 
 console.log(bollerPerPerson);
 
+// Det skrives ut 8.
+
