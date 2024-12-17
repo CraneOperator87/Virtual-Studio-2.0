@@ -1,116 +1,91 @@
 body {
+    background-color : #605856; /* Farge på bakgrunnen */
+    color : white; /* Farge på teksten */
     font-family : 'Courier New', Courier, monospace;
-    color : rgb(0, 0, 0);
-    background-color : rgba(197, 159, 159, 0.826);
-    margin : 0px;
+    font-size : 20px;
+    box-sizing : border-box;
 }
 
 header {
-    background-color: rgb(221, 131, 51);
-    color: rgb(0, 0, 0);
-    border: 2px solid #EBEBEB;
-    display: flex; 
-    align-items: end; 
-    justify-content: space-between;
-    box-sizing: border-box; 
-    padding: 0px;
-    width: 100%; 
-    margin: 0px;
+    background-color : #1C6E8C;
+    border:#D0CCD0 solid 3px;
+    color : white;
+    text-align : center;
+
+    margin : 2px;
+    padding : 10px;
 }
 
-header h1{
-    font-size: 24px;
-    margin: 0px;
-    padding: 0px;
-    color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
-    padding: 18px;
-}
-
-header img{
-    width: auto;
-    height: 64px;
+header img {
+    width : 100px;
+    height : auto;
 }
 
 nav {
-    display: flex;
-    gap : 20px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 10px;
+    background-color : #274156;
+    border : #D0CCD0 solid 3px;
+    color : white;
+    text-align : center;    
+    padding : 20px;
+    margin-left: 100px;
+    margin-right : 100px;
 }
 
-nav a {
-    text-decoration: none;
-    color: rgb(65, 109, 230);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    padding: 1em;
-    margin: 0px;
+a {
+    color : rgb(76, 153, 235);
 }
 
-article {
-    display : grid;
-    grid-template-columns: 1fr 1fr;
-
-    text-align: center;
-    align-items: center;
-    
-    margin-left: 50px;
+a:hover {
+    color : red;
 }
 
-main img {
-    width: 500px;
-    height : auto;
-
-    align-items: center;
-    padding : 50px;
-    margin-left : 50px;
-}
-
-
-footer {
-    border-top: 3px solid #EBEBEB;
-    background-color : rgba(197, 159, 159, 0.826);
-    color : black;
+.header-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    font-size: 22px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 100%;
-    margin: 0px;
-    padding: 20px;
-    background-color: rgb(221, 131, 51);
-}
-
-footer a {
-    color: rgb(65, 109, 230);
-}
-.grid-item {
-    margin-left : 50px;
-}
-.grid-item img {
-    width : 500px;
-    height : auto;
-
-}
-
-.grid-item p {
-    align-items: center;
-    text-align: left;
-    margin : 5px;
-}
-
-.grid-item a {
-    align-items: center;
-    text-align: left;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-rows : repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap : 10px;
     align-items : center;
-    justify-content : center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-container {
+    background-color : #1E6986;
+    border : #D0CCD0 solid 3px;
+    color : white;
+
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+
+    margin : 2px;
+
+}
+
+#main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-bilde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%; /* Ensure the container takes the full width */
+    height: 300px; /* Set a fixed height for the container */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-container img {
+    width: 100%; /* Stretch the image to fill the width of its container */
+    height: 100%; /* Stretch the image to fill the height of its container */
+    object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
 }
