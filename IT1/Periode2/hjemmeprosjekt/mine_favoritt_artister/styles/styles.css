@@ -8,6 +8,7 @@
 body {
     background-color : #022B3A;
     margin : auto;
+    width: 100%;
 }
 
 h1 {
@@ -69,20 +70,59 @@ nav {
 }
 
 main {
-    background-color : #1F7A8C;
+    background-color : #022B3A;
+    border-top: solid 5px #FFFFFF;
 
+    padding : 20px;
     margin : 0px;
-    width: 100%;
+    width: auto;
     height: 800px;
 }
 
 footer {
     background-color: #022B3A;
+    border-top: solid 5px #FFFFFF;
+
 
 }
 
-.seperator {
-    margin-top : 20px;
-    border-top: #FFFFFF 3px solid;
-    margin : 0px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure three equal columns */
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.grid-item {
+    background-color: #1F7A8C;
+    border : solid 2px #FFFFFF;
+    align-items: center;
+    justify-content: center;
+
+    margin : auto;
+
+    width : 500px;
+    height : 800px;
+
+}
+article {
+    padding : 22px;
+}
+
+.grid-item img {
+    padding : 10px;
+    width: 350px; /* Ensure the container takes the full width */
+    height: 700px; /* Set a fixed height for the container */
+    object-fit : cover;
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.4s ease; /* Smooth transition for hover effect */
+}
+.grid-item a {
+    display: inline-block; /* Ensure the anchor tag takes the full space of the grid item */
+}
+.grid-item img:hover {
+    transform: scale(1.03); /* Slightly enlarge the image on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
