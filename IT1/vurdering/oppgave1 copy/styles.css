@@ -1,0 +1,91 @@
+body {
+    background-color : #605856; /* Farge på bakgrunnen */
+    color : white; /* Farge på teksten */
+    font-family : 'Courier New', Courier, monospace;
+    font-size : 20px;
+    box-sizing : border-box;
+}
+
+header {
+    background-color : #1C6E8C;
+    border:#D0CCD0 solid 3px;
+    color : white;
+    text-align : center;
+
+    margin : 2px;
+    padding : 10px;
+}
+
+header img {
+    width : 100px;
+    height : auto;
+}
+
+nav {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 10px;
+    background-color : #274156;
+    border : #D0CCD0 solid 3px;
+    color : white;
+    text-align : center;    
+    padding : 20px;
+    margin-left: 100px;
+    margin-right : 100px;
+}
+
+a {
+    color : rgb(76, 153, 235);
+}
+
+a:hover {
+    color : red;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-container {
+    background-color : #1E6986;
+    border : #D0CCD0 solid 3px;
+    color : white;
+
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+
+    margin : 2px;
+
+}
+
+#main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-bilde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%; /* Ensure the container takes the full width */
+    height: 300px; /* Set a fixed height for the container */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-container img {
+    width: 100%; /* Stretch the image to fill the width of its container */
+    height: 100%; /* Stretch the image to fill the height of its container */
+    object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+}
