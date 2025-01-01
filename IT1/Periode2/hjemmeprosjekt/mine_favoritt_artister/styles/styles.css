@@ -63,7 +63,7 @@ footer {
     border-top: solid 5px #FFFFFF;
 }
 
-.grid-container {
+.grid-container-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Ensure three equal columns */
     grid-template-rows: auto;
@@ -71,16 +71,6 @@ footer {
     justify-content: center;
     text-align: center;
     width: 100%;
-}
-
-.grid-item {
-    background-color: #1F7A8C;
-    border : solid 2px #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    margin : auto;
-    width : 500px;
-    height : 800px;
 }
 
 article {
@@ -94,6 +84,14 @@ article {
     object-fit : cover;
     overflow: hidden; /* Prevent overflow */
     transition: transform 0.4s ease; /* Smooth transition for hover effect */
+}
+
+#image img {
+    transition : none;
+}
+#image img:hover {
+    transform: none; /* Remove transform effect on hover */
+    cursor: default; /* Change cursor to default on hover */
 }
 
 .grid-item a {
@@ -114,7 +112,6 @@ article {
 
 .grid-item-footer  {
     padding : 5px;
-
 }
 
 nav {
@@ -122,7 +119,6 @@ nav {
     justify-content : space-between;
     flex-direction: row;
     align-items: center;
-    
     gap : 20px;
     margin : 0px;
 }
