@@ -12,7 +12,9 @@ let figur1 = {
     skrivUtEgenskaperOgVerdier() {
         for (let key in this) {
             if (this.hasOwnProperty(key)) {
-                console.log(`${key}: ${this[key]}`);
+                if (typeof(this[key]) !== "function") {
+                    console.log(`${key}: ${this[key]}`);
+                }
             }
         }
     },
