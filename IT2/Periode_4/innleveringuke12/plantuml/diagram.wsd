@@ -1,0 +1,70 @@
+@startuml diagram  
+
+Class API {
+- API_key : str
+- API_URL : str
+}
+
+Class App {
+- Søk_funksjon
+- visMeny()
+- visResultater()
+- visFavoritter()
+- leggTilFavoritter()
+- fjernFavoritter()
+- sorterFavoritter()
+}
+
+Class VisueltMedia {
+- Titell : str
+- År : int
+- Sjanger : str
+- imbd_ID : str
+- Type : str
+- poster : str
+- lengde : int
+- språk : str
+- plot : str  
+- visInfo()
+}
+
+Class Movie {
+    - Lengde : int
+    - Prodent : str
+    - website : str
+    - regisør : str
+    - Sjanger : str
+    - visInfo()
+
+}
+
+Class Series {
+    - Sesonger : int
+    - Episoder : int
+    - Sjanger : str
+    - visInfo()
+}
+Class Favoritter{
+    - filmer : dict  
+    - serier : dict
+    - leggTil()
+    - fjern()
+    - sorter()
+    - vis()
+}
+
+Class Resultater {
+    - tittel : str
+    - år : int
+    - id : str 
+    - type : str 
+    - poster : str
+    - vis()
+}
+
+Movie --|> VisueltMedia
+Series --|> VisueltMedia
+VisueltMedia --> Favoritter
+Favoritter - App
+Resultater --* App
+@enduml

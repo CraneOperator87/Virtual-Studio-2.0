@@ -1,0 +1,54 @@
+@startuml fotballlag
+class Person {
+    + id : int
+    + navn : str
+    + etternavn : str
+    + fødselsdato : int
+    + visInfo ()
+}
+
+class Fotballklubb {
+    + navn : str
+    + etablert : str
+    + antallMedlemer : int
+    + hjemmeBane : str
+    + visInfo ()
+}
+
+class FotballSpiller {
+    + posisjon : str
+    + draktNummer : int
+    + medlemSiden : int
+    + visInfo ()
+    + endreDrakt ()
+    + endrePosisjon ()
+}
+
+class Fotballtrener {
+    + spesialisering : str
+    + lønn : int
+    + ansattSiden : int
+    + Lag : int
+    + visInfo ()
+    + endreSpesialisering ()
+    + endreLønn ()
+}
+
+class FotballLag {
+    + id : int
+    + navn : str
+    + antallSpillere : int
+    + visInfo ()
+    + visTrener ()
+    + visSpiller ()
+    + endreSpillere ()
+    + endreTrenere ()
+
+}
+
+Fotballtrener ---|> Person
+FotballSpiller ---|> Person
+FotballLag ---|> Fotballtrener
+FotballLag ---|> FotballSpiller
+Fotballklubb ---|> FotballLag
+@enduml

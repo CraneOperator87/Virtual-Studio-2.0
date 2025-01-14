@@ -1,0 +1,22 @@
+@startuml klasse
+
+class Person{
+    + fornavn : str
+    + etternavn : str
+    + f_ar : int
+    + f_ma : int
+    + f_da : int
+    + personid : str
+    + visInfo ()
+    + beregnAlder () 
+}
+
+class Elev{
+    + skole : str
+    + trinn : str
+    + klasse : str
+    + finnTrinn ()
+}
+
+Elev --|> Person
+@enduml

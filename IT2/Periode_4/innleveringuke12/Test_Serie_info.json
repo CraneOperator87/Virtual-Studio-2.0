@@ -1,0 +1,29 @@
+{
+  "Title": "Star Trek",
+  "Year": "1987–1994",
+  "Rated": "TV-PG",
+  "Released": "26 Sep 1987",
+  "Runtime": "44 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "N/A",
+  "Writer": "Gene Roddenberry",
+  "Actors": "Patrick Stewart, Brent Spiner, Jonathan Frakes",
+  "Plot": "Set almost 100 years after Captain Kirk's 5-year mission, a new generation of Starfleet officers sets off in the U.S.S. Enterprise-D on its own mission to go where no one has gone before.",
+  "Language": "English, Klingon, French",
+  "Country": "United States",
+  "Awards": "Won 18 Primetime Emmys. 39 wins & 61 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/M.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.7/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.7",
+  "imdbVotes": "135,376",
+  "imdbID": "tt0092455",
+  "Type": "series",
+  "totalSeasons": "7",
+  "Response": "True"
+}

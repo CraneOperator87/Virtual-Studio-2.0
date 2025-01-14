@@ -1,0 +1,21 @@
+@startuml diagram
+
+class Troll {
+  -speed: int
+  +update(): void
+}
+
+class Food {
+  -x: int
+  -y: int
+}
+
+class Obstacle {
+  -x: int
+  -y: int
+}
+
+Troll -- Food : Spiser >
+Troll -- Obstacle : Unngår >
+
+@enduml

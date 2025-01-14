@@ -1,0 +1,34 @@
+@startuml musikkhogskole
+class Person{
++id : int
++fornavn : str
++etternavn : str
++visInfo()
+}
+
+class Elev{
++fødselsår : int
++intrumenter : int
++visInstrumenter()
+}
+
+class Lærer{
++kontroplass : str
++kontordager : str
++lærerkurs : str
++visKontordager()
+}
+
+class Gruppe{
++navn : str
++klasserom : str
++LeggTilElever()
++FjernElever()
++visInfo()
+}
+
+Gruppe ---|> Lærer 
+Gruppe ---|> Elev 
+Elev ---|> Person
+Lærer ---|> Person
+@enduml

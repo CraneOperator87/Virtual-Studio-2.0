@@ -1,0 +1,50 @@
+@startuml spill
+class Arena{
+    + location : str
+    + Time : int
+    + ChangeTime ()
+    + ChangeLocation ()
+    + SpawnPlayer ()    
+    + SpawnNPC ()
+}
+class NPC <<Not Playable Character>>{
+    + HP : int
+    + ID : int
+    + damage_output : int
+    + ChangeValues ()
+    + ChangeTeam ()
+}
+class Player {
+    + HP : int
+    + ID : int
+    + damage_output : int
+    + immoratality ()
+    + spawnItem ()
+    + NoCooldown ()
+}
+class weapon_sword {
+    + ID : int
+    + Damage_output : int
+    + Range : int
+    + description : str
+    + getDescription ()
+    + 
+}
+class Ability_1 <<Damage!>>{
+    + Special_Ability_1 : int
+    + Ability_description : str
+    + Cooldown : int
+    + Show_info ()
+}    
+class Ability_2 <<Health Boost!>>{
+    + Special_Ability_2 : int
+    + Ability_description : str
+    + Cooldown : int
+    + Show_info ()
+}
+Ability_2 --|> NPC : Has
+Ability_1 --|> Player : Has
+weapon_sword --|> Player : Use
+NPC ---|> Arena
+Player ---|> Arena
+@enduml

@@ -1,0 +1,44 @@
+@startuml bilkollektiv
+
+class Bil{
+    + regnr : str
+    + type : str 
+    + pris : int 
+    + modell : str  
+    + leie()
+    + leggTil()
+    + fjern()
+    + eier()
+}
+
+class Elektrisk_bil{
+    + wattTimerPerKm : flaot  
+    + batteri : float  
+    + energi : float  
+    + endreInfo()
+}
+
+class Fosil_bil{
+    + BensinPerKm : float 
+    + Tank : float 
+    + drivstoffMengde : float 
+    + endreInfo()
+}
+
+class Kollektiv{
+    + medlemer : list  
+    + eier : str  
+    + biler : list 
+    + visMedlemer()
+    + endreMedlemer()
+    + visBiler()
+}
+
+class Medlem {
+    + Reservasjon : str 
+    + Navn : str  
+    + email : str  
+    + endreOpplysninger()
+    + reserverBil()
+}
+@enduml

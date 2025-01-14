@@ -1,0 +1,56 @@
+@startuml bokhandelproblemet
+class bokDatabase {
+    + tilhørighet : str
+    + databaseID : int
+    + antallBøker : int
+    + visInfo ()
+    + endreInfo ()
+    + leggTil ()
+    + Fjern ()
+}
+
+class Bok {
+    + ID : str
+    + ISBN : int
+    + tittel : str
+    + utgivelse : str
+    + baksidetekst : str
+    + forlag : str
+    + visInfo ()
+    + endreInfo ()
+    + leggTil ()
+    + Fjern ()
+}
+
+class Forfatter {
+    + navn : str
+    + etternavn : str
+    + visInfo ()
+    + endreInfo ()
+    + leggTilBok ()
+    + FjernBok ()
+}
+
+class Sjanger {
+    + navn : str
+    + beskrivelse : str
+    + visInfo ()
+    + endreInfo ()
+    + leggTilSjanger ()
+    + FjernSjanger ()
+}
+
+class Fagbok {
+    + fagområde : str
+    + beskrivelse : str
+    + visInfo ()
+    + endreInfo ()
+    + leggTil ()
+    + Fjern ()
+}
+
+Bok ---|> bokDatabase
+Sjanger ---|> Bok
+Forfatter ---|> Bok
+Fagbok ---|> Bok
+@enduml

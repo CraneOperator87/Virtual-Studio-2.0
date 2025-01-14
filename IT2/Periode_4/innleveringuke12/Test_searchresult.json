@@ -1,0 +1,34 @@
+{
+  "Search": [
+    {
+      "Title": "Star Wars: Episode I - The Phantom Menace",
+      "Year": "1999",
+      "imdbID": "tt0120915",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/M.jpg"
+    },
+    {
+      "Title": "Star Wars: Episode I - The Phantom Menace - Webisodes",
+      "Year": "2001",
+      "imdbID": "tt5990766",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTdjMzdkNTMtNDdkZS00MmRkLTgxZmEtMmVhMjZiYzU3YjcwXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Star Wars: Episode I - The Phantom Menace - Behind the Scenes",
+      "Year": "2001",
+      "imdbID": "tt5990770",
+      "Type": "movie",
+      "Poster": "N/A"
+    },
+    {
+      "Title": "Episode 21 - Star Wars: Episode I - The Phantom Menace (1999)",
+      "Year": "1999",
+      "imdbID": "tt18508096",
+      "Type": "movie",
+      "Poster": "N/A"
+    }
+  ],
+  "totalResults": "4",
+  "Response": "True"
+}
