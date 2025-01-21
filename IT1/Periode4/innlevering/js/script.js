@@ -16,10 +16,12 @@ let poengSum1 = 0;
 let poengSum2 = 0;
 let currentSpiller = 1;
 
+
+// Denne funksjonen vet jeg nøyaktig hva den gjør, og har skrevet selv før, men trengte litt hjelp fra youtube tutorial:
 function startSpillet() {
     console.log("Spillet har startet");
     startSpillE1.style.display = "none";
-    spillContentE1.style.display = "block";
+    spillContentE1.style.display = "block"; 
     updateButtonStates();
 }
 
