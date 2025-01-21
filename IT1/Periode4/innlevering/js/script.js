@@ -14,7 +14,7 @@ let spiller1Score = 0;
 let spiller2Score = 0;
 let poengSum1 = 0;
 let poengSum2 = 0;
-let currentPlayer = 1;
+let currentSpiller = 1;
 
 function startSpillet() {
     console.log("Spillet har startet");
@@ -45,7 +45,7 @@ function kastTerning(spiller) {
     if (spillerScore > 50) {
         spillerScore = 50 - (spillerScore - 50);
     }
-
+    // Hjelp fra AI:
     terningResultatE1.textContent = `Resultat av kast: ${terningResultat}`;
     spillerScoreE1.textContent = `Spiller ${spiller}: ${spillerScore}`;
 
@@ -63,11 +63,12 @@ function kastTerning(spiller) {
         poengSum2 = poengSum;
     }
 
-    // Switch turn
-    currentPlayer = currentPlayer === 1 ? 2 : 1;
+    // Henta fra AI:
+    currentSpiller = currentSpiller === 1 ? 2 : 1;
     updateButtonStates();
 }
 
+// Hele funksjon hentet fra w3Schools:
 function updateButtonStates() {
     kastTerningButtons.forEach((button, index) => {
         if (index + 1 === currentPlayer) {
@@ -82,6 +83,7 @@ function updateButtonStates() {
     });
 }
 
+// Denne delen hentet også fra w3Schools:
 kastTerningButtons.forEach((button, index) => {
     button.addEventListener("click", () => kastTerning(index + 1));
 });
