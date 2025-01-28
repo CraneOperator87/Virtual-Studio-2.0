@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="hoved">
+            <h1>Registrer film</h1>
+            <label for="tittel">Tittel</label>
+            <input type="text" id="tittel" placeholder="Titanic">
+
+            <label for="beskrivelse">Beskrivelse</label>
+            <textarea id="beskrivelse" placeholder="beskrivelse av filmen"></textarea>
+
+            <label for="aarstall">Årstall</label>
+            <input type="number" id="aarstall" placeholder="1997">
+
+            <label for="aldersgrense">Aldersgrense</label>
+            <select id="aldersgrense">
+                <option value="alle">Tillatt for alle</option>
+                <option value="syv">7 år</option>
+                <option value="tolv">12 år</option>
+                <option value="fjorten">14 år</option>
+                <option value="seksten">16 år</option>
+                <option value="atten">18 år</option>
+            </select>
+
+            <button>Registrer</button>
+
+            
+        </div>
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

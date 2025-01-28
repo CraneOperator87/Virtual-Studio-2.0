@@ -1,0 +1,26 @@
+#visittkort {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: none; /* Skjul på starten */
+}
+
+#visittkort.vis {
+    display: block; /* Vis når klassen 'vis' er tilstede */
+}
+
+#visittkort-skjema {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    grid-gap : 10px;
+
+}
+
+.griditem {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    
+}

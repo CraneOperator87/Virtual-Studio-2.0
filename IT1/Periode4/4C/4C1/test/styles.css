@@ -1,0 +1,26 @@
+body { 
+    background-color: #9a3c3c;
+    font-family: Georgia, serif;
+}
+
+
+.hoved {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+
+
+    width: 60%;                 
+    margin: 50px auto;         
+    padding: 40px;	            
+    background-color: white; 	 
+    border: 1px solid #cccccc;
+}
+  h1, h2 {
+    font-family: Arial, sans-serif;
+  }
+  input, textarea, select {
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
