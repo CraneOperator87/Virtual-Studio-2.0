@@ -1,0 +1,76 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+
+p {
+    color : white;
+    font-size: 20px;
+    padding : 2px;
+}
+
+label {
+    font-size: 20px;
+    padding : 2px;
+}
+h2 {
+    color : white;
+    font-size: 30px;
+    padding : 2px;
+}
+
+.skjema {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.visittkort-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width : 400px;
+    height : 200px;
+
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#visittkort.vis {
+    display : block;
+}
+
+#visittkort {
+    display : none;
+    background-color: blue;
+    border: 1px solid black;
+    margin : 5px;
+    padding : 20px;
+
+    width : 650px;
+
+    border-radius : 5px;
+}
+
+#beskrivelse {
+    width : 150px;
+    height: auto;
+
+}
+
+.desc {
+    width: 150px;
+    background-color: cyan;
+}
