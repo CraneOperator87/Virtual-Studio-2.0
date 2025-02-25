@@ -1,0 +1,1 @@
+lag en farge "velger" for russekortert, gi en mulighet for å endre farge på russekortet.

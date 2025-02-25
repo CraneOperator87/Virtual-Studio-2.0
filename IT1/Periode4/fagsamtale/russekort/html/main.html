@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vissitkort Generator</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+    <main>
+        <div class = "skjema">
+            <h1>Registrer vissitkort</h1>
+            <label for = "navn">Navn</label>
+            <input type = "text" id = "navn" placeholder = "Ola Nordmann">
+
+            <label for="telefon">Telefonnummer</label>
+            <input type="number" id="telefon" placeholder="12345678">
+
+            <label for="beskrivelse">Kort tekst om personen</label>
+            <textarea id="beskrivelse" maxlength = "30" cols = "3" rows = "2" placeholder="Skriv en kort tekst om personen"></textarea>
+
+            <label for="trinn">Trinn</label>
+            <select id="trinn">
+                <option value="vg1">Vg1</option>
+                <option value="vg2">Vg2</option>
+                <option value="vg3">Vg3</option>
+            </select>
+
+            <label for = "farge">Velg farge til din kort</label>
+            <input type = "color" id = "farge" name = "farge" value = "#ff0000">
+        </div>
+
+        <div id="visittkort-container">
+            <div id="visittkort"></div>
+        </div>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
