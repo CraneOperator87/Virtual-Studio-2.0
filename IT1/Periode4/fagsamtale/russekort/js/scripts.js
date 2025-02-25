@@ -5,6 +5,11 @@ document.getElementById("trinn").addEventListener("input", genererVisittkort);
 
 document.getElementById("farge").addEventListener("input", endreFarge);
 
+document.getElementById("farge").addEventListener("preset1", endreFarge);
+document.getElementById("farge").addEventListener("preset2", endreFarge);
+
+document.getElementById("lagre-knapp").addEventListener("click", lagreVisittkort);
+
 
 function genererVisittkort() {
     const navn = document.getElementById('navn').value;
@@ -31,4 +36,14 @@ function endreFarge() {
     const farge = document.getElementById("farge").value;
     const visittkortDiv = document.getElementById('visittkort');
     visittkortDiv.style.backgroundColor = farge; // Oppdater bakgrunnsfargen til visittkortet
+}
+
+function lagreVisittkort() {
+    const visittkortDiv = document.getElementById('visittkort');
+    const savedCardsContainer = document.getElementById('saved-cards-container');
+
+    const clonedCard = visittkortDiv.cloneNode(true);
+    clonedCard.classList.remove('vis'); // Remove the 'vis' class if you don't want the saved card to be hidden
+
+    savedCardsContainer.appendChild(clonedCard);
 }

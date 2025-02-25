@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelin Restaurant § Velg Reservasjon</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stilark.css" />
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logo1.png" alt="Michelin Logo">
+        </div>
+        
+        <div id="titel">
+            <h1>Michelin Restaurant</h1>
+        </div>
+
+        <div id="knapper">
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div id="regskjema">
+                <!-- Bruker sitt navn-->
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" placeholder="Ditt navn, etternavn">
+
+                <!-- Bruker sitt telefonummer-->
+                <label for="telefon">Telefonnummer:</label>
+                <input type="tel" id="telefon" placeholder="Ditt telefonnummer (+47)">
+
+                <!-- Reservasjon for dato -->
+                <label for="dato">Venligst velg dato for reservasjon:</label>
+                <input type="date" id="dato" placeholder="mm.dd.åååå">
+
+                <!-- Bruker valg tid -->
+                <label for="tid">Velg tiden til denne reservasjonen:</label>
+                <p>Merk!: [Restauranten] er fullbooket mellom 18:30 til 20:30!</p>
+                <select id="ledigereservasjoner">
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                </select>
+
+                <!-- Reservasjon for antall personer -->
+                <label for="gjester">Velg antall gjester:</label>
+                <input type="range" id="gjester" min="1" max="8" value="1">
+                <p id = "antallGjester">1</p>
+                <p>Merk!: Restauranten tar i mot maks 8 gjester. </p>
+                <p>For selskaper med flere gjester, ta kontakt : "restaurant@hotmail.no"</p>
+
+                <button id="reservasjon">Reserver Bord</button>
+            </div>
+
+            <div id="res-container">
+                <div id="resDiv" class="hidden"></div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
