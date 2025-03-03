@@ -61,15 +61,13 @@ h2 {
 }
 
 #visittkort {
-    display : none;
-    background-color: #ff0000;
-    border: 1px solid black;
-    margin : 5px;
-    padding : 20px;
-
-    width : 650px;
-
-    border-radius : 5px;
+    display: none;  
+    background-color: transparent; 
+    border: none; /* Fjern kantlinje */
+    margin: 5px;
+    padding: 20px;
+    width: 650px;
+    border-radius: 5px;
 }
 
 #beskrivelse {
@@ -85,4 +83,11 @@ h2 {
 
 .desc {
     width: 150px;
+}
+
+#lagre-knapp {
+    margin-top : 5px;
+    margin-bottom : 10px;
+
+    padding : 5px;
 }
