@@ -13,23 +13,40 @@
     </header>
     <main>
         <div id="spillInnhold" style="display: none;">
-            <p>Spillet har startet!</p>
+            <p id = "spillState"></p>
             <article>
                 <div id="runde">Runde: 0</div>
+
                 <button id="restart">Restart</button>
+
                 <div class="game" id="gameBoard">
+
                     <div class="player">
-                        <div id="spiller1">Spiller 1: 0</div>
+                        <!-- Spiller 1-->
+                        <div id="spiller1">Spiller 1: 0</div> 
+                        <!-- Spiller 1 sitt score, koblet med spiller1ScoreE1-->
+
                         <img src="../images/dice.png" id="dice" alt="Terning som ikke har blitt kastet">
+
                         <button id="kastTerning">Kast Terning</button>
                         <p id="terningResultat1">0</p>
+                        <!-- Spiller 1 & 2 Koblet med kastTerningButtons og terningResultat1E1-->
                     </div>
+
                     <div class="player">
+                        <!-- Spiller 2-->
                         <div id="spiller2">Spiller 2: 0</div>
+                        <!-- Spiller 2 sitt score, koblet med spiller2ScoreE1-->
+
                         <img src="../images/dice.png" id="dice2" alt="Terning som ikke har blitt kastet">
+
                         <button id="kastTerning">Kast Terning</button>
                         <p id="terningResultat2">0</p>
+                        <!-- Spiller 1 & 2 Koblet med kastTerningButtons og terningResultat1E1-->
+
+
                     </div>
+
                 </div>
                 <div class="poengSum">
                     <div id="poengSum1">Poengsum Spiller 1: 0</div>
