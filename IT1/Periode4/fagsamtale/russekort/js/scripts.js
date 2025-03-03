@@ -4,8 +4,10 @@ document.getElementById("telefon").addEventListener("input", genererVisittkort);
 document.getElementById("beskrivelse").addEventListener("input", genererVisittkort);
 document.getElementById("trinn").addEventListener("input", genererVisittkort);
 document.getElementById("farge").addEventListener("input", () => endreFarge(null));
+
 document.getElementById("preset1").addEventListener("click", () => endreFarge("#ff0000"));
 document.getElementById("preset2").addEventListener("click", () => endreFarge("#1500ff"));
+
 document.getElementById("lagre-knapp").addEventListener("click", lagreVisittkort);
 
 function genererVisittkort() {
@@ -52,10 +54,10 @@ function lagreVisittkort() {
 
     const lagreCardsContainer = document.getElementById('lagrede-cards-container');
 
-    const newCard = document.createElement("div");
-    newCard.classList.add("visittkort");
-    newCard.style.backgroundColor = farge;
-    newCard.innerHTML = `
+    const kloneKort = document.createElement("div");
+    kloneKort.classList.add("visittkort");
+    kloneKort.style.backgroundColor = farge;
+    kloneKort.innerHTML = `
         <h2>Visittkort</h2>
         <p><strong>Navn:</strong> ${navn}</p>
         <p><strong>Telefonnummer:</strong> ${telefon}</p>
@@ -63,5 +65,5 @@ function lagreVisittkort() {
         <p><strong>Trinn:</strong> ${trinn}</p>
     `;
 
-    lagreCardsContainer.appendChild(newCard);
+    lagreCardsContainer.appendChild(kloneKort);
 }
