@@ -14,7 +14,7 @@
             <input type = "text" id = "navn" placeholder = "Ola Nordmann">
 
             <label for="telefon">Telefonnummer</label>
-            <input type="number" id="telefon" placeholder="12345678">
+            <input type="number" maxlength = "12" id="telefon" placeholder="12345678">
 
             <label for="beskrivelse">Kort tekst om personen</label>
             <textarea id="beskrivelse" maxlength = "30" cols = "3" rows = "2" placeholder="Skriv en kort tekst om personen"></textarea>
@@ -37,10 +37,8 @@
             
         </div>
 
-        <div id="visittkort-container">
-            <div id="visittkort"></div>
-        </div>
-        <h2>Lagrede Visittkort</h2>
+        
+    <h2>Lagrede Visittkort</h2>
         <div id="visittkort" class="vis"></div>
         <div id="lagrede-cards-container"></div>
     </main>

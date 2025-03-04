@@ -18,7 +18,7 @@ function genererVisittkort() {
     const farge = document.getElementById('farge').value;
     const visittkortDiv = document.getElementById('visittkort');
 
-    if (navn !== "") { 
+    if (navn !== "" || telefon !== "" || beskrivelse !== "") { 
         visittkortDiv.innerHTML = `
             <h2>Visittkort</h2>
             <p><strong>Navn:</strong> ${navn}</p>
@@ -28,9 +28,11 @@ function genererVisittkort() {
         `;
 
         visittkortDiv.style.backgroundColor = farge;
-        visittkortDiv.style.display = "block"; // Viser kortet når det er informasjon
+        visittkortDiv.style.border = "1px solid black";
+        visittkortDiv.style.display = "block"; 
     } else {
-        visittkortDiv.style.display = "none"; // Skjuler kortet hvis navn er tomt
+        visittkortDiv.style.display = "none";
+        visittkortDiv.style.border = "none"; 
     }
 }
 
@@ -50,13 +52,14 @@ function lagreVisittkort() {
     const trinn = document.getElementById('trinn').value;
     const farge = document.getElementById('farge').value;
 
-    if (navn === "") return; // Ikke lagre tomme kort
+    if (navn === "") return;
 
     const lagreCardsContainer = document.getElementById('lagrede-cards-container');
 
     const kloneKort = document.createElement("div");
     kloneKort.classList.add("visittkort");
     kloneKort.style.backgroundColor = farge;
+    kloneKort.style.border = "1px solid black"; 
     kloneKort.innerHTML = `
         <h2>Visittkort</h2>
         <p><strong>Navn:</strong> ${navn}</p>
