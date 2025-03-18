@@ -13,6 +13,8 @@ header {
 
     border : 2px solid black;
 
+    padding : 10px;
+
 }
 
 footer {
@@ -108,3 +110,18 @@ img {
     padding : 15px;
 }
 
+#resDiv {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding : 20px;
+    padding-top : 40px;
+    padding-bottom : 40px;
+
+    border : 2px solid rgba(255, 217, 0, 0.375);
+    background-color : #2e2a2a;
+
+    display : none;
+}

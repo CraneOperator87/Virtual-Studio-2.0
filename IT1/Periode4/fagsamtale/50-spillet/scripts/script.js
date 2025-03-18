@@ -96,7 +96,7 @@ function updateButtonStates() {
     kastTerningButtons.forEach((button, index) => {
         if (index + 1 === currentSpiller) {
             button.disabled = false;
-            button.style.backgroundColor = "#919792";
+            button.style.backgroundColor = "green";
             button.style.cursor = "pointer";
         } else {
             button.disabled = true;

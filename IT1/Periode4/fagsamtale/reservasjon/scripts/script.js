@@ -23,12 +23,13 @@ function resCon() {
         return;
     }
 
-    if (ledigereservasjoner === "18:30" || "19:00" || "19:30" || "20:00" || "20:30") {
-        alert("Dette tidspunktet er dessverre fullbooket. Vennligst velg et annet tidspunkt.");
-        return;
+    ///
+    /// if (ledigereservasjoner === "18:30" || "19:00" || "19:30" || "20:00" || "20:30") {
+    ///    alert("Dette tidspunktet er dessverre fullbooket. Vennligst velg et annet tidspunkt.");
+    ///     return;
 
-    }
-
+    /// }
+    
     regSkjemaE1.style.display = "none"; // Skjul skjemaet
 
     // Vis bekreftelsesmelding

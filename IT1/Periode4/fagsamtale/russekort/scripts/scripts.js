@@ -9,6 +9,9 @@ document.getElementById("preset1").addEventListener("click", () => endreFarge("#
 document.getElementById("preset2").addEventListener("click", () => endreFarge("#1500ff"));
 
 document.getElementById("lagre-knapp").addEventListener("click", lagreVisittkort);
+ 
+document.getElementsByClassName("visittkort") 
+
 
 function genererVisittkort() {
     const navn = document.getElementById('navn').value.trim();
