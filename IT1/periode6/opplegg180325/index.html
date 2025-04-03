@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nettbutikk - Bøker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header> 
+      <h1>Bokhandel</h1>
+    </header>
+    <main class="beholder">
+      
+      <section class="bøker" id="bok-liste"></section>  <!--opprettes dynamisk-->
+      
+      <section class="handlekurv">
+        <h2>Handlekurv</h2>
+        <ul id="handlekurv-liste"></ul>
+        <p>
+          <strong>Total: <span id="totalpris">0</span> NOK</strong>
+        </p>
+        <button id = "delete">Fjern Handlekurv</button>
+      </section>
+      
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
